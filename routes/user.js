@@ -20,6 +20,7 @@ router.post(
     check("email", "Please enter a valid email").isEmail(),
     check("password", "Please enter a valid password").isLength({
       min: 6,
+      max:12, 
     }),
   ],
   async (req, res) => {
